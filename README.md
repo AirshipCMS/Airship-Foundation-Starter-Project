@@ -1,12 +1,14 @@
 # README #
 
-## Airship Starter Project 
+## Airship Foundation Starter Project 
+The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, Gulp, NodeJS, Bower. Use this as starter boilderplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Birbucket) is highly recommended, though not required.  
+
+Also see:
+
+#### Airship Starter Project 
 The Airship Starter Project is for someone who knows HTML and CSS and can open a terminal window to run a few commands. If you are just getting into web development, or you are a designer who is starting to extend your skills into basic javascript programming, this is a great demo to start off with.
 
-## Airship Foundation Starter Project 
-The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, Gulp, NodeJS, Bower. Use this as starter boilderplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Birbucket) is highly recommended, though not required.
-
-## Airship SPA Starter Project
+#### Airship SPA Starter Project
 (Coming Soon). If you already know how to build an Angular or React project, then you might be looking for a CMS that can host your project and allow a non-technical manager access to just a portion of your application content. Check out how a SPA works with Airship in the Airship SPA Starter Project.
 
 ----
