@@ -82,7 +82,7 @@ In your terminal, navigate to an _empty directory_ for your project. If you are 
 ```
 - All `compartments` will sync with Airship.
 - `layouts` and `templates` mirror the layouts & templates set in the CMS for each page and collection.
-- `assets` contains 3 directories: `scripts`, `styles` and `media`. Do not add any other directories or files immediately inside of `assets`. T
+- `assets` contains 3 directories: `scripts`, `styles` and `media`. Do not add any other directories or files immediately inside of `assets`.
 - You can add any number of files or subdirectories inside of `scripts`, `styles` and `media`.
 - Allowed file types in `scripts`: [need to document]
 - Allowed file types in `styles`: [need to document]
