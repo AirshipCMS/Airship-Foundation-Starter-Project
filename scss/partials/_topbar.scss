@@ -1,0 +1,268 @@
+// This partial controls the topbar. It relies on Zurb Foundation. 
+// For the most part, settings here will override `foundation_settings`
+
+// Too see the component structure, turn on all the commented out background colors
+// Which have been left in this partial for easier development.
+
+// Color variables in the `topbar` partial are intentionally not connected to other partials.
+// Obvious placeholder colors have been set for your convenience.
+
+// PLACEHOLDER COLORS
+$topbar-background-color: #FCFCFC;
+$topbar-container-color: #FF0000;
+$topbar-link-background-color: transparent;
+$topbar-link-text-color: #444444;
+$topbar-link-hover-background-color: #AAAAAA;
+$topbar-link-hover-text-color: #FFFFFF;
+$topbar-icon-color: #888888;
+$topbar-mobile-menu-lines-color: #CCCCCC;
+
+// SMALL SIZES - LOGO
+$topbar-logo-height-small: 50px;
+$topbar-logo-font-size-small: 18px;
+
+// MEDIUM & LARGE SIZES - LOGO
+$topbar-logo-height-medium: 70px;
+$topbar-logo-font-size-medium: 24px;
+
+$topbar-logo-max-width-medium: 500px;
+$topbar-space-between-links-medium: 20px;
+$topbar-space-around-links-medium: 10px;
+
+// SMALL SIZES - HAMBURGER MENU ICON
+$hamburger-menu-icon-size-small: $topbar-logo-height-small*0.5;
+$hamburger-menu-spacing-small: "0 8px 0 #{$topbar-icon-color}, 0 16px 0 #{$topbar-icon-color}";
+$hamburger-menu-icon-top-offset-small: 17px;
+$hamburger-menu-icon-right-offset-small: 18px;
+
+// MEDIUM SIZES - HAMBURGER MENU ICON
+$hamburger-menu-icon-size-medium: $topbar-logo-height-small*0.65;
+$hamburger-menu-spacing-medium: "0 11px 0 #{$topbar-icon-color}, 0 22px 0 #{$topbar-icon-color}";
+$hamburger-menu-icon-top-offset-medium: 23px;
+$hamburger-menu-icon-right-offset-medium: 26px;
+
+// LOGO
+.logo {
+  float: left;
+  width: 80%;
+
+  @include breakpoint(large) {
+    float: none;
+    max-width: none;
+    width: auto;
+  }
+}
+
+.logo a{
+  box-sizing: border-box;
+  display: block;
+  height: $topbar-logo-height-small;
+  width: 100%;
+
+  @include breakpoint(medium) {
+    height: $topbar-logo-height-medium;
+  }
+
+  @include breakpoint(large) {
+    height: $topbar-logo-height-medium;
+  }
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.logo a h1 {
+  margin:0;
+  padding:0;
+  
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  background-image: url('http://placehold.it/100x100?text=LOGO');
+
+  line-height: $topbar-logo-height-small;
+  padding-left: $topbar-logo-height-small;
+
+  @include breakpoint(medium) {
+    line-height: $topbar-logo-height-medium;
+    background-size: $topbar-logo-height-medium auto;
+    padding-left: $topbar-logo-height-medium;
+  }
+}
+
+.logo a h1 span {
+  // background-color: $topbar-container-color;
+  display: block;
+  text-align: left;
+  font-size: $topbar-logo-font-size-small;
+  max-height: $topbar-logo-height-small;
+  overflow: hidden;
+  color: $topbar-link-text-color;
+  padding-left: $topbar-logo-height-small*0.15;
+
+  @include breakpoint(medium) {
+    max-height: $topbar-logo-height-medium;
+    font-size: $topbar-logo-font-size-medium;
+    padding-left: $topbar-logo-height-medium*0.15;
+  }
+}
+
+// TOP BAR
+.top-bar {
+  padding: 0;
+  background-color: $topbar-background-color;
+}
+
+// DESKTOP TOP BAR LEFT
+// MOBILE FULL WIDTH
+.top-bar-title {
+  margin: 0;
+  width: 100%;
+  float: none;
+
+  @include breakpoint(large) {
+    float: left;
+    width: auto;
+    max-width: $topbar-logo-max-width-medium;
+  }
+}
+
+// DESKTOP TOP BAR RIGHT
+#desktop-menu {
+  // background-color: $topbar-container-color;
+  float: right;
+}
+
+// MOBILE TOP BAR RIGHT
+.mobile-menu-button {
+  // background-color: $topbar-container-color;
+  display: block;
+  float: right;
+  width: 20%;
+  height: $topbar-logo-height-small;
+
+  @include breakpoint(medium) {
+    height: $topbar-logo-height-medium;
+  }
+}
+
+// MENU ICON
+.mobile-menu-button button.menu-icon{
+  position: absolute;
+  display: block;
+  padding:0;
+  width: $hamburger-menu-icon-size-small;
+  height: $hamburger-menu-icon-size-small;
+  right: $hamburger-menu-icon-right-offset-small;
+  top: $hamburger-menu-icon-top-offset-small;
+  background-color: transparent;
+
+  @include breakpoint(medium) {
+    width: $hamburger-menu-icon-size-medium;
+    height: $hamburger-menu-icon-size-medium;
+    right: $hamburger-menu-icon-right-offset-medium;
+    top: $hamburger-menu-icon-top-offset-medium;
+  }
+}
+
+.menu-icon:after,
+.menu-icon:hover:after {
+  box-shadow: #{$hamburger-menu-spacing-small};
+  background: $topbar-icon-color;
+  height: 1px;
+
+  @include breakpoint(medium) {
+    box-shadow: #{$hamburger-menu-spacing-medium};
+  }
+}
+
+.menu-icon:hover,
+.menu-icon:hover:after{
+  opacity: 0.7;
+}
+
+// ALL MENUS
+.top-bar ul.menu{
+  text-align: center;
+  background-color: transparent; // overrides foundation's background color
+
+  @include breakpoint(large) {
+    text-align: left;
+  }
+}
+  
+// DESKTOP FIRST-LEVEL MENU
+.top-bar #desktop-menu > ul.menu{
+
+  @include breakpoint(large) {
+    line-height: $topbar-logo-height-medium;
+  }
+
+  > li{
+    margin-right: $topbar-space-between-links-medium;
+    display: inline-block;
+    vertical-align: center;
+    line-height: $topbar-logo-height-medium;
+
+    // VERTICAL HEIGHT HACKY OFFSET
+    margin-bottom: $topbar-logo-height-medium*0.05;
+  } 
+}
+
+// DESKTOP DROPDOWN MENU
+.top-bar ul.menu.is-dropdown-submenu{
+  
+  @include breakpoint(large) {
+    background-color: $topbar-background-color;
+    border: 0;
+  }
+}
+
+// DROPDOWN & DRILLDOWN ARROWS
+// Arrows can be turned off in `_foundation_settings.scss`
+
+// DESKTOP
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+  border-color: $topbar-icon-color transparent transparent;
+}
+
+// MOBILE
+.is-accordion-submenu-parent > a::after{
+  border-color: $topbar-icon-color transparent transparent;
+}
+
+// MENU ITEMS
+.top-bar ul.menu > li{
+  display: block;
+  padding:0;
+  margin:0;
+  border-top: 1px solid $topbar-mobile-menu-lines-color;
+
+  @include breakpoint(large){
+    border-top: none;
+  }
+}
+
+.top-bar ul.menu > li > a {
+  background-color: $topbar-link-background-color;
+  color: $topbar-link-text-color;
+  line-height: $topbar-logo-height-small;
+  padding: 0;
+
+  @include breakpoint(medium) {
+    line-height: $topbar-logo-height-medium;
+  }
+
+  @include breakpoint(large) {
+    line-height: initial;
+    padding: $topbar-space-around-links-medium;
+  }
+}
+
+.top-bar ul.menu > li > a:hover,
+.top-bar ul.menu li.active-nav a{
+  background-color: $topbar-link-hover-background-color;
+  color: $topbar-link-hover-text-color;
+}

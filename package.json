@@ -1,0 +1,23 @@
+{
+  "name": "airship-foundation-starter-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AirshipCMS/Airship-Foundation-Starter-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/AirshipCMS/Airship-Foundation-Starter-Project#README",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sass": "^2.3.2"
+  }
+}

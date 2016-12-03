@@ -1,0 +1,35 @@
+// LAYOUT STYLE GUIDE
+
+// Structure for "rows" of content follow this convention:
+// Outermost Container (BG color):          .container.named-container
+// Foundation Row:                            .row
+// Foundation Columns:                          .large-12.columns
+// Inner Block (margin/padding/border)            .block.named-block
+
+// As much as possible, don't apply classes or styles
+// to elements containing Foundation's rows and columns.
+// (thus the convention for an outer container and inner block).
+
+.container{
+  background-color: #EEEEEE;
+
+  &.header-container{
+    
+  }
+
+  &.footer-container{
+    background-color: #222222;
+  }
+}
+
+.block{
+  border: 1px dashed #CCCCCC;
+
+  &.header-block{
+    border: 0;
+  }
+
+  &.footer-block{
+    border: 0;
+  }
+}

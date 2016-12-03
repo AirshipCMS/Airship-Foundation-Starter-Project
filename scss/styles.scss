@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+// Define your project color variables `foundation_settings`
+// in order to use them in subsequent scss components.
+
+// FOUNDATION
+@import 'partials/foundation_settings';
+@import 'foundation';
+@import 'motion-ui';
+@import 'partials/foundation_components';
+
+// FOUC
+// Be sure to also add ".no-js" to the top-level <html> tag. 
+// This will hide elements that should not be visible until JS loads.
+.no-js{
+  #responsive-menu{
+    display:none;
+  }
+}
+
+// STRUCTURE
+// Read the styleguide for notes on how to best use Foundation conventions.
+@import 'partials/layout';
+
+// TOPBAR
+// Standard FOUNDATION topbar with overrides for more flexible controls.
+@import 'partials/topbar';

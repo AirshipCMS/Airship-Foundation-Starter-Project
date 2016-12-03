@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- Add class "no-js" here, then target elements that should be hidden before js loads -->
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Name</title>
+
+  <!-- Needed for MOBILE STYLES to take effect -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Needed for FOUNDATION -->
+  <script src="https://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="/assets/styles/styles.css">
+
+</head>
+<body>
+  <header class="header-container container">
+    <!-- Enable these two divs to constrain the nav to FOUNDATION's grid -->
+    <!-- <div class="row"> -->
+      <!-- <div class="large-12 columns"> -->
+        <div class="block header-block">
+          <div class="top-bar clearfix">
+            <div class="top-bar-title clearfix">
+              <div class="logo">
+                <a href="/"><h1><span>Project Name</span></h1></a>
+              </div>
+              <span class="mobile-menu-button" data-responsive-toggle="responsive-menu" data-hide-for="large">
+                <button class="menu-icon" type="button" data-toggle></button>
+              </span>
+            </div>
+
+            <div id="responsive-menu" class="hide-for-large clearfix">
+              <ul class="accordion menu" data-accordion-menu>
+                <li class="nav-first">
+                  <a href="#">First</a>
+                </li>
+                <li class="nav-second">
+                  <a href="#">Second</a>
+                  <ul class='menu'>
+                    <li><a href="#">Subnav Link</a></li>
+                    <li><a href="#">Subnav Link</a></li>
+                  </ul>
+                </li>
+                <li class="nav-third">
+                  <a href="#">Third</a>
+                </li>
+                <li class="nav-fourth">
+                  <a href="#">Fourth</a>
+                </li>
+                <li class="nav-fifth">
+                  <a href="#">Fifth</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="desktop-menu" class="show-for-large clearfix">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="nav-first">
+                  <a href="#">First</a>
+                </li>
+                <li class="nav-second">
+                  <a href="#">Second</a>
+                  <ul class='menu'>
+                    <li><a href="#">Subnav Link</a></li>
+                    <li><a href="#">Subnav Link</a></li>
+                  </ul>
+                </li>
+                <li class="nav-third">
+                  <a href="#">Third</a>
+                </li>
+                <li class="nav-fourth">
+                  <a href="#">Fourth</a>
+                </li>
+                <li class="nav-fifth">
+                  <a href="#">Fifth</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  </header>
+
+  {{{template}}}
+
+  <div class="container footer-container">
+    <div class="row">
+      <div class="small-12 medium-6 large-3 columns">
+        <div class="block footer-block">
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 medium-6 large-3 columns">
+        <div class="block footer-block">
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 medium-6 large-3 columns">
+        <div class="block footer-block">
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 medium-6 large-3 columns">
+        <div class="block footer-block">
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOUNDATION -->
+  <script src="/assets/scripts/what-input.js"></script>
+  <script src="/assets/scripts/foundation.js"></script>
+  <script src="/assets/scripts/app.js"></script>
+</body>
+</html>
