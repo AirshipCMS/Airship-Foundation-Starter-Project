@@ -58,7 +58,7 @@ The Airship CLI tool allows you to `airship serve` content locally from your Air
 ## Local Development Setup
 In your terminal, navigate to an _empty directory_ for your project. If you are using an SCM tool, this is the root directory for your repository.
 
-- Run `airship login projectsubdomain`, and `y` to set the project root. Enter your superadmin email and password for the project  
+- Run `airship login projectname`, and `y` to set the project root. Enter your superadmin email and password for the project  
 - Run `airship land` to retrieve the initial project files.
 - Run `airship serve` to render propeller markup, and serve content from Airship CMS.
 - Add the markup `{{{help}}}` in any template file to see what data is available for rendering.
