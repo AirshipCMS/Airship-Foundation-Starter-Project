@@ -1,19 +1,22 @@
 # README #
 
 ## Airship Foundation Starter Project 
-The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, Gulp, NodeJS, Bower. Use this as starter boilderplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Birbucket) is highly recommended, though not required.  
-
-Also see:
+The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, Gulp, NodeJS, Bower. Use this as starter boilerplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Birbucket) is highly recommended, though not required.  
 
 #### Airship Starter Project 
-The Airship Starter Project is for someone who knows HTML and CSS and can open a terminal window to run a few commands. If you are just getting into web development, or you are a designer who is starting to extend your skills into basic javascript programming, this is a great demo to start off with.
+(Coming Soon) The Airship Starter Project is for someone who knows HTML and CSS and can open a terminal window to run a few commands. If you are just getting into web development, or you are a designer who is starting to extend your skills into basic javascript programming, this is a great demo to start off with.
 
 #### Airship SPA Starter Project
-(Coming Soon). If you already know how to build an Angular or React project, then you might be looking for a CMS that can host your project and allow a non-technical manager access to just a portion of your application content. Check out how a SPA works with Airship in the Airship SPA Starter Project.
+(Coming Soon) If you already know how to build an Angular or React project, then you might be looking for a CMS that can host your project and allow a non-technical manager access to just a portion of your application content. Check out how a SPA works with Airship in the Airship SPA Starter Project.
 
 ----
 
-## Airship Project Setup  
+# How to Use this Boilerplate
+Download this repo, and copy relevant files to your project after you `airship land` your project.
+
+----
+
+# Airship Project Setup  
 - Login to the [Skyport](http://skyport.airshipcms.io) to create a new project.
 - Login to your Project's Airship CMS Admin Panel. For example: [Example Project](http://example-project.airshipcms.io/admin)  
 - Set up the Pages and Collections for your project.  
@@ -38,7 +41,7 @@ The Airship CLI tool allows you to `airship serve` content locally from your Air
 ----
 
 ## Local Development Setup
-In your terminal, navigate to the directory you would like to work on your project. If you are using an SCM tool, this is the root directory for your repository.
+In your terminal, navigate to an _empty directory_ for your project. If you are using an SCM tool, this is the root directory for your repository.
 
 - Run `airship login projectsubdomain`, and `y` to set the project root. Enter your superadmin email and password for the project  
 - Run `airship land` to retrieve the initial project files.
