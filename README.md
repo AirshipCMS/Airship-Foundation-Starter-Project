@@ -105,10 +105,9 @@ Log in to your project with your _superadmin_ access level *email*, your *passwo
 ```
 airship login projectname
 ```
-You will be prompted to enter your email (careful, backspace is disabled).  
-Then you will be prompted to enter your password.  
+*projectname* is the subdomain for your project. If your airshipcms.io project subdomain is "marketing.airshipcms.io", you would enter `airship login marketing` or `airship login marketing.airshipcms.io`.
 
-Note: `airship login [projectname]` connects you to the airship server for the project globally on your computer. If you have landed the project in more than one location, logging in will open the connection to airship for the project in all those locations.
+This will connect you to the airship server for the project globally on your computer. If you have landed the project in more than one location, logging in will open the connection to airship for the project in all those locations.
 
 ### airship land
 Do this the *first time you work on the project*. This pulls down necessary Airship config files and initial project structure. After the first time, you should have all your files frequently backed up in Git, so you will never really have to run _airship land_ anymore, and you can simply create and launch your new files without ever landing again.  
