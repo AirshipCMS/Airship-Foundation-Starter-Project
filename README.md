@@ -12,7 +12,24 @@ The Airship Foundation Starter Project is for someone who has an introductory le
 ----
 
 # How to Use this Boilerplate
-Download this repo, and copy relevant files to your project after you `airship land` your project.
+If you want to use a Foundation + Gulp basis for your project, follow all the steps for Airship Project Setup, then after you have run `airship land` for your project, copy over relevant code from this repo to your project directory. If you are copying the exact project structure, here are the files you may want to copy:
+- the entire `scss` directory (the partials for foundation_components.scss and foundation_settings.scss may need to be updated if Foundation has released a newer version)
+- `.gitignore`, `bower.json`, `gulpfile.js`, and `package.json`.
+- `/compartments/layouts/application.html`  
+- `/compartments/root.html`  
+- all scripts inside of `/compartments/assets/scripts` (these are base Foundation scripts, may need to be updated if Foundation has released newer versions)
+
+If you have `public make` turned on for a collection, you will need:
+- `/compartments/layouts/airmail.html`  
+- `/compartments/airmail/contact-form_email.html`  
+
+If you have eCommerce enabled, you will need:
+- `/compartments/layouts/airmail.html`  
+- `/compartments/airmail/invoice.html`  
+- `/compartments/airmail/receipt.html`  
+- `/compartments/airmail/shipment.html`  
+
+You should already be familiar with node, so all you need to do to run the boilerplate is run `npm install`, `bower install` and then `gulp`.
 
 ----
 
