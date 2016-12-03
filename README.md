@@ -27,7 +27,7 @@ If you have eCommerce enabled, you will need:
 - `/compartments/airmail/receipt.html`  
 - `/compartments/airmail/shipment.html`  
 
-You should already be familiar with node, so all you need to do to run the boilerplate is run `npm install`, `bower install` and then `gulp`.
+You should already be familiar with node, so all you need to do to run the boilerplate to compile scss is run `npm install`, `bower install` and `gulp` in addition to `airship serve`.
 
 ----
 
