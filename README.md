@@ -33,7 +33,7 @@ You should already be familiar with node, so all you need to do to run the boile
 
 # Airship Project Setup  
 - Login to the [Skyport](http://skyport.airshipcms.io) to create a new project.
-- Login to your Project's Airship CMS Admin Panel. For example: [Example Project](http://example-project.airshipcms.io/admin)  
+- Login to your Project's Airship CMS Admin Panel.  
 - Set up the Pages and Collections for your project.  
 - Add in placeholder content to each Page and Collection (without this, you won't be able to see anything on the site when you develop locally!)
 
