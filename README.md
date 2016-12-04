@@ -27,7 +27,9 @@ If you have eCommerce enabled, you will need:
 - `/compartments/airmail/receipt.html`  
 - `/compartments/airmail/shipment.html`  
 
-You should already be familiar with node, so all you need to do to run the boilerplate to compile scss is run `npm install`, `bower install` and `npm run dev`.
+You should already be familiar with node, so all you need to do to run the boilerplate to compile scss is run `npm install` and `bower install` to install dependencies.
+
+Then run `npm run dev` instead of `airship serve` in order to run both the airship serve command and browser sync. This will run the site at `localhost:3000`.
 
 ----
 
