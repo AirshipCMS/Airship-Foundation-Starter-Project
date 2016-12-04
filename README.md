@@ -1,8 +1,8 @@
 # Airship Foundation Starter Project 
-The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, Gulp, NodeJS, Bower. Use this as starter boilerplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Birbucket) is highly recommended, though not required.  
+The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, NodeJS, Bower. Use this as starter boilerplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Bitbucket) is highly recommended, though not required.  
 
 #### Airship Basic Starter Project 
-(Coming Soon) The Airship Basic Starter Project is for someone who knows HTML and CSS and can open a terminal window to run a few commands. If you are just getting into web development, or you do print design and want to start learning web design, this is a great demo to start off with.
+(Coming Soon) The Airship Basic Starter Project is for someone who knows HTML and CSS and can open a terminal window to run a few commands. If you are just getting into web development, this is a great demo to start off with.
 
 #### Airship SPA Starter Project
 (Coming Soon) If you already know how to build an Angular or React project, then you might be looking for a CMS that can host your project and allow a non-technical manager access to just a portion of your application content. Check out how a SPA works with Airship in the Airship SPA Starter Project.
@@ -12,7 +12,7 @@ The Airship Foundation Starter Project is for someone who has an introductory le
 # How to Use this Boilerplate
 If you want to use a Foundation + Gulp basis for your project, follow all the steps for Airship Project Setup, then after you have run `airship land` for your project, copy over relevant code from this repo to your project directory. If you are copying the exact project structure, here are the files you may want to copy:
 - the entire `scss` directory (the partials for foundation_components.scss and foundation_settings.scss may need to be updated if Foundation has released a newer version)
-- `.gitignore`, `bower.json`, `gulpfile.js`, and `package.json`.
+- `.gitignore`, `bower.json`, and `package.json`.
 - `/compartments/layouts/application.html`  
 - `/compartments/root.html`  
 - all scripts inside of `/compartments/assets/scripts` (these are base Foundation scripts, may need to be updated if Foundation has released newer versions)
@@ -27,7 +27,7 @@ If you have eCommerce enabled, you will need:
 - `/compartments/airmail/receipt.html`  
 - `/compartments/airmail/shipment.html`  
 
-You should already be familiar with node, so all you need to do to run the boilerplate to compile scss is run `npm install`, `bower install` and `gulp` in addition to `airship serve`.
+You should already be familiar with node, so all you need to do to run the boilerplate to compile scss is run `npm install`, `bower install` and `npm run dev`.
 
 ----
 
