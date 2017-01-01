@@ -72,19 +72,19 @@ If you have eCommerce enabled, you will need:
 - `/compartments/airmail/shipment.html`  
 These files must be named exactly as shown.
 
-3. Run `npm install` and `bower install` to install dependencies.
+3.Run `npm install` and `bower install` to install dependencies.
 
-4. Copy the contents of `/bower_components/foundation_sites/scss/settings/_settings.scss` into `/scss/partials/_foundation_settings.scss`.
+4.Copy the contents of `/bower_components/foundation_sites/scss/settings/_settings.scss` into `/scss/partials/_foundation_settings.scss`.
 
-5. Turn on/off foundation components relevant to your project in `/scss/partials/_foundation_components.scss`.
+5.Turn on/off foundation components relevant to your project in `/scss/partials/_foundation_components.scss`.
 
-6. Run `npm run dev`. This will run both the `airship serve` command and the process for `browser-sync`. 
+6.Run `npm run dev`. This will run both the `airship serve` command and the process for `browser-sync`. 
 
-7. Instead of `localhost:9001`, view in Chrome at `localhost:3000`. 
+7.Instead of `localhost:9001`, view in Chrome at `localhost:3000`. 
 
-8. The first time you run `npm run dev`, scss may not be compiled to css. Make a change to the styles.scss (such as adding a "hello world" red body background color) and save.
+8.The first time you run `npm run dev`, scss may not be compiled to css. Make a change to the styles.scss (such as adding a "hello world" red body background color) and save.
 
-9. Modify the markup and scss files in your project.
+9.Modify the markup and scss files in your project.
 
 ----
 
