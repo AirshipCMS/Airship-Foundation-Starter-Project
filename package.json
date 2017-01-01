@@ -8,7 +8,7 @@
     "dev": "airship serve & npm run css:watch & npm run css:prefix & npm run start-browser-sync",
     "css:watch": "node-sass --include-path 'bower_components/foundation-sites/scss' --include-path 'bower_components/motion-ui/src' scss/styles.scss compartments/assets/styles/_styles.css -w scss/",
     "css:prefix": "postcss -u autoprefixer -w -o 'compartments/assets/styles/styles.css' 'compartments/assets/styles/_styles.css'",
-    "start-browser-sync": "browser-sync start --proxy 'localhost:9001' --files 'compartments/assets/styles/styles.css'"
+    "start-browser-sync": "browser-sync start --proxy 'localhost:9001' --files 'compartments/'"
   },
   "repository": {
     "type": "git",
