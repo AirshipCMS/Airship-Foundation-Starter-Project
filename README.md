@@ -1,4 +1,6 @@
-# [Airship Foundation Starter Project ](https://github.com/AirshipCMS/Airship-Foundation-Starter-Project)
+# Airship Foundation Starter Project
+
+#### [Airship Foundation Starter Project](https://github.com/AirshipCMS/Airship-Foundation-Starter-Project)
 The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, NodeJS, Browser Sync, Bower, HandebarsJS. Use this as starter boilerplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Bitbucket) is highly recommended, though not required.  
 
 #### [Airship Basic Starter Project](https://github.com/AirshipCMS/Airship-Basic-Starter-Project)
@@ -17,7 +19,7 @@ The Airship Basic Starter Project is for someone who knows HTML and CSS and can 
 
 ----
 
-## Airship CLI Launcher
+# Airship CLI Launcher
 You only need to install the Airship CLI Launcher to your computer when you first start developing Airship projects. Only developers/superadmins need this tool. Non-technical admins can do all their work in the online Airship CMS Admin portal.
 
 ### Installing the cli tools on a Mac or Linux
@@ -25,15 +27,13 @@ Download and install the latest version of the cli at:
 [install.airshipcms.io](https://install.airshipcms.io)
 
 ### Installing the cli tools for Windows
-Nope. Airship CMS CLI Launcher is not available for Windows.  
-Get a Mac OSX ^10.?.? or use Linux.
+Airship CMS CLI Launcher is not available for Windows yet.
 
-### About the Launcher
 The Airship CLI tool allows you to `airship serve` content locally from your Airship CMS Project. It also allows you to `airship land` to sync files down to your computer from the server, and `airship launch` to deploy your project.
 
 ----
 
-## Local Development Setup
+# Local Development Setup
 In your terminal, navigate to an _empty directory_ for your project. If you are using an SCM tool, this is the root directory for your repository.
 
 - Run `airship login projectname`, and `y` to set the project root. Enter your superadmin email and password for the project  
@@ -48,9 +48,10 @@ In your terminal, navigate to an _empty directory_ for your project. If you are 
 # Using a SCSS-Foundation Node Workflow
 If you want to use Foundation as the basis for your project, follow all the steps for typical Airship Project Setup above, then...
 
-1. If you are running `airship serve` in your project repo, kill the process.
+1.If you are running `airship serve` in your project repo, kill the process.
 
-2. Copy over the following files to your project:
+2.Copy over the following files to your project: 
+
 - `.gitignore`
 - `bower.json`
 - `package.json`
