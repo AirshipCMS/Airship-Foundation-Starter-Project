@@ -9,30 +9,6 @@ The Airship Basic Starter Project is for someone who knows HTML and CSS and can 
 
 ----
 
-# How to Use this Boilerplate
-If you want to use Foundation as the basis for your project, follow all the steps for Airship Project Setup, then after you have run `airship land` for your project, copy over relevant code from this repo to your project directory. If you are copying the exact project structure, here are the files you may want to copy:
-- the entire `scss` directory (the partials for foundation_components.scss and foundation_settings.scss may need to be updated if Foundation has released a newer version)
-- `.gitignore`, `bower.json`, and `package.json`.
-- `/compartments/layouts/application.html`  
-- `/compartments/templates/root.html`  
-- all scripts inside of `/compartments/assets/scripts` (these are base Foundation scripts, may need to be updated if Foundation has released newer versions)
-
-If you have `public make` turned on for a collection, you will need:
-- `/compartments/layouts/airmail.html`  
-- `/compartments/airmail/contact-form_email.html`  
-
-If you have eCommerce enabled, you will need:
-- `/compartments/layouts/airmail.html`  
-- `/compartments/airmail/invoice.html`  
-- `/compartments/airmail/receipt.html`  
-- `/compartments/airmail/shipment.html`  
-
-You should already be familiar with node, so all you need to do to run the boilerplate to compile scss is run `npm install` and `bower install` to install dependencies.
-
-Then run `npm run dev` instead of `airship serve` in order to run both the airship serve command and browser sync. This will run the site at `localhost:3000`.
-
-----
-
 # Airship Project Setup  
 - Login to the [Skyport](http://skyport.airshipcms.io) to create a new project.
 - Login to your Project's Airship CMS Admin Panel.  
@@ -65,6 +41,49 @@ In your terminal, navigate to an _empty directory_ for your project. If you are 
 - Run `airship serve` to render propeller markup, and serve content from Airship CMS.
 - Add the markup `{{{help}}}` in any template file to see what data is available for rendering.
 - Use Chrome to view the locally running project at `localhost:9001`
+
+
+----
+
+# Using a SCSS-Foundation Node Workflow
+If you want to use Foundation as the basis for your project, follow all the steps for typical Airship Project Setup above, then...
+
+1. If you are running `airship serve` in your project repo, kill the process.
+
+2. Copy over the following files to your project:
+- `.gitignore`
+- `bower.json`
+- `package.json`
+- `/scss`
+- `/compartments/layouts/application.html`  
+- `/compartments/templates/root.html`  
+- `/compartments/assets/scripts` (these are base Foundation scripts, may need to be updated if Foundation has released newer versions)
+
+If you have `public make` turned on for a collection, you will need:
+- `/compartments/layouts/airmail.html`  
+- `/compartments/airmail/contact-form_email.html`
+The file name for for the airmail template depends on your collection name.
+
+If you have eCommerce enabled, you will need:
+- `/compartments/layouts/airmail.html`  
+- `/compartments/airmail/invoice.html`  
+- `/compartments/airmail/receipt.html`  
+- `/compartments/airmail/shipment.html`  
+These files must be named exactly as shown.
+
+3. Run `npm install` and `bower install` to install dependencies.
+
+4. Copy the contents of `/bower_components/foundation_sites/scss/settings/_settings.scss` into `/scss/partials/_foundation_settings.scss`.
+
+5. Turn on/off foundation components relevant to your project in `/scss/partials/_foundation_components.scss`.
+
+6. Run `npm run dev`. This will run both the `airship serve` command and the process for `browser-sync`. 
+
+7. Instead of `localhost:9001`, view in Chrome at `localhost:3000`. 
+
+8. The first time you run `npm run dev`, scss may not be compiled to css. Make a change to the styles.scss (such as adding a "hello world" red body background color) and save.
+
+9. Modify the markup and scss files in your project.
 
 ----
 
@@ -149,3 +168,9 @@ Note: `airship logout` disconnects you from the airship server for the project g
 ## Source Code Management
 If you are using a source code management tool, you will probabaly only need to `airship land` the first time you set up the project. If your code is safely committed, you may occasionally want to run `airship land` to investigate diffs between local and production files. 
 Be sure to `.gitignore` your `bower_components and node_modules`. It is also safe to .gitignore the `.airship` directory of your project.
+
+
+UPDATE: You may need to update the foundation partials with partials from the bower components if Foudnation updates.
+
+Also explain components.
+Rip out foundation settings and make user put it in manually (most up to date)
