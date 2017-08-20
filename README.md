@@ -3,12 +3,6 @@
 #### [Airship Foundation Starter Project](https://github.com/AirshipCMS/Airship-Foundation-Starter-Project)
 The Airship Foundation Starter Project is for someone who has an introductory level of programming knowledge about HTML and Javascript tools: Foundation, SASS, NodeJS, Browser Sync, Bower, HandebarsJS. Use this as starter boilerplate for your project, or rip out all the tools and replace them with your own favorite workflow tools. Basic Source Code Management (like Git or Bitbucket) is highly recommended, though not required.  
 
-#### [Airship Basic Starter Project](https://github.com/AirshipCMS/Airship-Basic-Starter-Project)
-The Airship Basic Starter Project is for someone who knows HTML and CSS and can open a terminal window to run a few commands. If you are just getting into web development, this is a great demo to start off with. This demo is based on an introductory set of pages and collections that showcase all the basics of Airship CMS.
-
-#### Airship SPA Starter Project
-(Coming Soon) If you already know how to build an Angular or React project, then you might be looking for a CMS that can host your project and allow a non-technical manager access to just a portion of your application content. Check out how a SPA works with Airship in the Airship SPA Starter Project.
-
 ----
 
 # Airship Project Setup  
@@ -60,18 +54,6 @@ If you want to use Foundation as the basis for your project, follow all the step
 - `/compartments/templates/root.html`  
 - `/compartments/assets/scripts` (these are base Foundation scripts, may need to be updated if Foundation has released newer versions)
 
-If you have `public make` turned on for a collection, you will need:
-- `/compartments/layouts/airmail.html`  
-- `/compartments/airmail/contact-form_email.html`
-The file name for for the airmail template depends on your collection name.
-
-If you have eCommerce enabled, you will need:
-- `/compartments/layouts/airmail.html`  
-- `/compartments/airmail/invoice.html`  
-- `/compartments/airmail/receipt.html`  
-- `/compartments/airmail/shipment.html`  
-These files must be named exactly as shown.
-
 3.Run `npm install` and `bower install` to install dependencies.
 
 4.Copy the contents of `/bower_components/foundation_sites/scss/settings/_settings.scss` into `/scss/partials/_foundation_settings.scss`.
@@ -83,6 +65,8 @@ These files must be named exactly as shown.
 7.Instead of `localhost:9001`, view in Chrome at `localhost:3000`. 
 
 8.The first time you run `npm run dev`, scss may not be compiled to css. Make a change to the styles.scss (such as adding a "hello world" red body background color) and save.
+
+Note: If you get an error, it may be because either `/assets/styles/styles.css` or `/assets/styles/_styles.css` has not generated initially. Create the missing file, then restart `npm run dev`.
 
 9.Modify the markup and scss files in your project.
 
@@ -96,19 +80,13 @@ These files must be named exactly as shown.
   /layouts
   /partials
   /assets
-    /styles
-    /scripts
-    /media
   /templates
 /(other development project directories and assets go out here)
 ```
 - All `compartments` will sync with Airship.
 - `layouts` and `templates` mirror the layouts & templates set in the CMS for each page and collection.
-- `assets` contains 3 directories: `scripts`, `styles` and `media`. Do not add any other directories or files immediately inside of `assets`.
+- `assets` contain scripts, media, styles, and any other files you need to run your project.
 - You can add any number of files or subdirectories inside of `scripts`, `styles` and `media`.
-- Allowed file types in `scripts`: [need to document]
-- Allowed file types in `styles`: [need to document]
-- Allowed file types in `media`: [need to document]
 - Keep your pre-processed code and and files outside of the `compartments` directory.
 
 ----
@@ -172,6 +150,3 @@ Be sure to `.gitignore` your `bower_components and node_modules`. It is also saf
 
 
 UPDATE: You may need to update the foundation partials with partials from the bower components if Foudnation updates.
-
-Also explain components.
-Rip out foundation settings and make user put it in manually (most up to date)
